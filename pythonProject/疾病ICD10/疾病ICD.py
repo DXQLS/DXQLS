@@ -1,9 +1,4 @@
-'''
-Name : test2.py
-Author : WangShuZhou
-Contact : 2443340977@qq.com
-Time : 2024-04-30 16:35
-'''
+
 import re
 
 import pandas as pd

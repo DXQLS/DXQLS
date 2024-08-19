@@ -45,10 +45,12 @@ def GetIcdId():
     resp = requests.get('https://code.nhsa.gov.cn/jbzd/public/toStdIcdTreeList.html', headers=headers)
     # print(resp.json())
     data = resp.json()
+    fk = pd.DataFrame(data)
     # print(len(data))
     for _ in data:
         IcdId_list.append(_["icdId"])
         # print(_["icdId"])
+    IcdId_list
     return IcdId_list
 
 

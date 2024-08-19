@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21418a2c-b838-46ce-98a4-e652e33b22a0" name="Changes" comment="冯坤爬虫代码">
+      <change afterPath="$PROJECT_DIR$/pythonProject/json转换.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonProject/sqlCreate/acic_ccs_bas_medicine_yaopin_insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/pythonProject/sqlCreate/acic_ccs_bas_medicine_yaopin_insert.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonProject/sqlCreate/acic_ccs_bas_medicine_zhenliao_insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/pythonProject/sqlCreate/acic_ccs_bas_medicine_zhenliao_insert.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pythonProject/sqlCreate/acic_ccs_uat_bas_medicine_zhenliao_insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/pythonProject/sqlCreate/acic_ccs_uat_bas_medicine_zhenliao_insert.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonProject/sqlCreate/sqlCreateZhenLiao.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonProject/sqlCreate/sqlCreateZhenLiao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonProject/study/fk_01.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonProject/study/fk_01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonProject/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonProject/疾病ICD10/3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonProject/疾病ICD10/4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pythonProject/疾病ICD10/code_name.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/pythonProject/疾病ICD10/code_name.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pythonProject/疾病ICD10/疾病ICD.py" beforeDir="false" afterPath="$PROJECT_DIR$/pythonProject/疾病ICD10/疾病ICD.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,83 +67,109 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;Python tests.Python tests in test_1.py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.1000.executor&quot;: &quot;Run&quot;,
-    &quot;Python.11111.executor&quot;: &quot;Run&quot;,
-    &quot;Python.20240403.executor&quot;: &quot;Run&quot;,
-    &quot;Python.2024_02_19.executor&quot;: &quot;Run&quot;,
-    &quot;Python.AnscyMultiprocess_AH_DRUG.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aaa.executor&quot;: &quot;Run&quot;,
-    &quot;Python.aaaa.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bbb.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ccc.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ceshi.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dataInsertYaoPin.executor&quot;: &quot;Run&quot;,
-    &quot;Python.dataInsertZhenLiao.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ddd.executor&quot;: &quot;Run&quot;,
-    &quot;Python.demo5_gov.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.eee.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fk_01.executor&quot;: &quot;Run&quot;,
-    &quot;Python.fuJianSpider.executor&quot;: &quot;Run&quot;,
-    &quot;Python.guangDongSpider.executor&quot;: &quot;Run&quot;,
-    &quot;Python.guiZhouSpider.executor&quot;: &quot;Run&quot;,
-    &quot;Python.guiZhouSpider_2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.haiNanXiYao.executor&quot;: &quot;Run&quot;,
-    &quot;Python.jsyp.executor&quot;: &quot;Run&quot;,
-    &quot;Python.pdf_word.executor&quot;: &quot;Run&quot;,
-    &quot;Python.qiChaChaSpider.executor&quot;: &quot;Run&quot;,
-    &quot;Python.spider.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sqlCreateYaoPing.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sqlCreateYaopin.executor&quot;: &quot;Run&quot;,
-    &quot;Python.sqlCreateZhenLiao (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.sqlCreateZhenLiao.executor&quot;: &quot;Run&quot;,
-    &quot;Python.str_change.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.url_jiexi.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.yanTaiSpider.executor&quot;: &quot;Run&quot;,
-    &quot;Python.中成药.executor&quot;: &quot;Run&quot;,
-    &quot;Python.云南药品_西药中成药.executor&quot;: &quot;Run&quot;,
-    &quot;Python.云南药品_西药中药饮片.executor&quot;: &quot;Run&quot;,
-    &quot;Python.全国定点医疗机构.executor&quot;: &quot;Run&quot;,
-    &quot;Python.全国定点医院.executor&quot;: &quot;Run&quot;,
-    &quot;Python.江苏诊疗.executor&quot;: &quot;Run&quot;,
-    &quot;Python.测试.executor&quot;: &quot;Run&quot;,
-    &quot;Python.测试111.executor&quot;: &quot;Run&quot;,
-    &quot;Python.海南耗材集采.executor&quot;: &quot;Run&quot;,
-    &quot;Python.海南药品集采.executor&quot;: &quot;Run&quot;,
-    &quot;Python.疾病ICD.executor&quot;: &quot;Run&quot;,
-    &quot;Python.药品.executor&quot;: &quot;Run&quot;,
-    &quot;Python.青岛耗材.executor&quot;: &quot;Run&quot;,
-    &quot;Python.青岛药品.executor&quot;: &quot;Run&quot;,
-    &quot;Python.青岛药品_中药颗粒.executor&quot;: &quot;Run&quot;,
-    &quot;Python.青岛药品_中药饮片 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.青岛药品_自制药.executor&quot;: &quot;Run&quot;,
-    &quot;Python.青岛药品_西药中成药集采.executor&quot;: &quot;Run&quot;,
-    &quot;Python.青岛药品西药中药饮片.executor&quot;: &quot;Run&quot;,
-    &quot;Python.青岛诊疗.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;fk__spider1&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/pythonProject&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Python tests.Python tests in test_1.py.executor": "Run",
+    "Python.1000.executor": "Run",
+    "Python.1111.executor": "Run",
+    "Python.11111.executor": "Run",
+    "Python.20240403.executor": "Run",
+    "Python.2024_02_19.executor": "Run",
+    "Python.AnscyMultiprocess_AH_DRUG.executor": "Run",
+    "Python.aaa.executor": "Run",
+    "Python.aaaa.executor": "Run",
+    "Python.ancheng_机构sql生成.executor": "Run",
+    "Python.bbb.executor": "Run",
+    "Python.ccc.executor": "Run",
+    "Python.ceshi.executor": "Run",
+    "Python.dataInsertYaoPin.executor": "Run",
+    "Python.dataInsertZhenLiao.executor": "Run",
+    "Python.ddd.executor": "Run",
+    "Python.demo5_gov.executor": "Debug",
+    "Python.eee.executor": "Run",
+    "Python.excel表数据转成inser语句 (1).executor": "Run",
+    "Python.fk_01.executor": "Run",
+    "Python.fuJianSpider.executor": "Run",
+    "Python.guangDongSpider.executor": "Run",
+    "Python.guiZhouSpider.executor": "Run",
+    "Python.guiZhouSpider_2.executor": "Run",
+    "Python.haiNanXiYao.executor": "Run",
+    "Python.json转换.executor": "Run",
+    "Python.json转换_诊疗.executor": "Run",
+    "Python.jsyp.executor": "Run",
+    "Python.pdf_word.executor": "Run",
+    "Python.qiChaChaSpider.executor": "Run",
+    "Python.quji.executor": "Run",
+    "Python.sanxai_spaider.executor": "Run",
+    "Python.spider.executor": "Run",
+    "Python.spider_zizhiji.executor": "Run",
+    "Python.sqlCreateYaoPing.executor": "Run",
+    "Python.sqlCreateYaopin.executor": "Run",
+    "Python.sqlCreateZhenLiao (1).executor": "Run",
+    "Python.sqlCreateZhenLiao.executor": "Run",
+    "Python.str_change.executor": "Run",
+    "Python.test.executor": "Run",
+    "Python.test1.executor": "Run",
+    "Python.url_jiexi.executor": "Debug",
+    "Python.yanTaiSpider.executor": "Run",
+    "Python.中成药.executor": "Run",
+    "Python.云南药品_西药中成药.executor": "Run",
+    "Python.云南药品_西药中药饮片.executor": "Run",
+    "Python.全国定点医疗机构.executor": "Run",
+    "Python.全国定点医院.executor": "Run",
+    "Python.地区代码.executor": "Run",
+    "Python.地区代码区级.executor": "Debug",
+    "Python.安徽药品1.executor": "Run",
+    "Python.安徽药品_中药饮片 (1).executor": "Run",
+    "Python.安徽药品_异步爬取.executor": "Run",
+    "Python.安徽药品_异步爬取2.executor": "Run",
+    "Python.安徽药品_异步爬取4.executor": "Run",
+    "Python.安徽药品_民族药.executor": "Run",
+    "Python.安徽药品_自制药.executor": "Run",
+    "Python.安徽药品_西药中成药.executor": "Run",
+    "Python.安徽诊疗1.executor": "Run",
+    "Python.安责数据爬取.executor": "Run",
+    "Python.江苏诊疗.executor": "Run",
+    "Python.测试.executor": "Run",
+    "Python.测试111.executor": "Run",
+    "Python.海南耗材集采.executor": "Run",
+    "Python.海南药品集采.executor": "Run",
+    "Python.港澳证件检验.executor": "Run",
+    "Python.疾病ICD.executor": "Run",
+    "Python.自增数生成.executor": "Run",
+    "Python.药品.executor": "Run",
+    "Python.青岛耗材.executor": "Run",
+    "Python.青岛药品.executor": "Run",
+    "Python.青岛药品_中药颗粒.executor": "Run",
+    "Python.青岛药品_中药饮片 (1).executor": "Run",
+    "Python.青岛药品_自制药.executor": "Run",
+    "Python.青岛药品_西药中成药集采.executor": "Run",
+    "Python.青岛药品西药中药饮片.executor": "Run",
+    "Python.青岛诊疗.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "fk__spider1",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/pythonProject",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pythonProject" />
+      <recent name="D:\pythonProject\pythonProject" />
       <recent name="D:\pythonProject\pythonProject\苏州" />
       <recent name="D:\pythonProject\pythonProject\江苏" />
       <recent name="D:\pythonProject\pythonProject\study" />
-      <recent name="D:\pythonProject\pythonProject\云南" />
-      <recent name="D:\pythonProject\pythonProject\青岛" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\pythonProject" />
+      <recent name="D:\pythonProject\pythonProject\tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.疾病ICD">
-    <configuration name="江苏诊疗" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.json转换">
+    <configuration name="安责数据爬取" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,11 +178,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonProject/江苏" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonProject/冯坤临时脚本" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonProject/江苏/江苏诊疗.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonProject/冯坤临时脚本/安责数据爬取.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -161,7 +191,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="疾病ICD" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="安徽诊疗1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,11 +200,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonProject/疾病ICD10" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonProject/疾病ICD10/疾病ICD.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/安徽诊疗1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -183,7 +213,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="药品" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="安徽诊疗1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,11 +222,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonProject/辽宁药品" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonProject/辽宁药品/药品.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/安徽诊疗1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,7 +235,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="fk_01" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="地区代码区级" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -214,11 +244,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonProject/study" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/中国民生银行" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonProject/study/fk_01.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/中国民生银行/地区代码区级.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -227,7 +257,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sqlCreateYaoPing" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="安徽药品_西药中成药" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -236,11 +266,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonProject/sqlCreate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonProject/sqlCreate/sqlCreateYaoPing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/安徽药品_西药中成药.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,7 +279,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="sqlCreateZhenLiao" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="json转换" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pythonProject" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,11 +288,33 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonProject/sqlCreate" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonProject" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonProject/sqlCreate/sqlCreateZhenLiao.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonProject/json转换.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="json转换_诊疗" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pythonProject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pythonProject" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pythonProject/json转换_诊疗.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -273,11 +325,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.疾病ICD" />
-        <item itemvalue="Python.sqlCreateYaoPing" />
-        <item itemvalue="Python.sqlCreateZhenLiao" />
-        <item itemvalue="Python.fk_01" />
-        <item itemvalue="Python.江苏诊疗" />
+        <item itemvalue="Python.json转换" />
+        <item itemvalue="Python.json转换_诊疗" />
+        <item itemvalue="Python.安徽药品_西药中成药" />
+        <item itemvalue="Python.安责数据爬取" />
+        <item itemvalue="Python.安徽诊疗1" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +360,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718349962132</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="冯坤爬虫代码">
+      <option name="closed" value="true" />
+      <created>1718607878394</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718607878394</updated>
+    </task>
+    <task id="LOCAL-00003" summary="冯坤爬虫代码">
+      <option name="closed" value="true" />
+      <created>1718607887668</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718607887668</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -412,11 +480,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pythonProject/青岛/青岛药品_西药中成药集采.py</url>
-          <line>131</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pythonProject/青岛/青岛药品_西药中成药集采.py</url>
           <line>95</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
@@ -436,12 +499,78 @@
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/pythonProject/study/fk_01.py</url>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pythonProject/辽宁/辽宁.py</url>
           <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pythonProject/study/sanxai_spaider.py</url>
+          <line>56</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pythonProject/study/sanxai_spaider.py</url>
+          <line>32</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pythonProject/疾病ICD10/疾病ICD.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pythonProject/疾病ICD10/疾病ICD.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pythonProject/疾病ICD10/疾病ICD.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pythonProject/疾病ICD10/疾病ICD.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pythonProject/青海/spider_zizhiji.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pythonProject/青海/spider_zizhiji.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/pythonProject/tools/excel表数据转成inser语句.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/安徽药品_中药饮片.py</url>
+          <line>299</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/安徽药品_中药饮片.py</url>
+          <line>292</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/安徽药品_中药饮片.py</url>
+          <line>203</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/中国民生银行/地区代码.py</url>
+          <line>105</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/中国民生银行/地区代码.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="85" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -450,6 +579,15 @@
         <watch expression="df" />
         <watch expression="all_dic" />
         <watch expression="to_execl_dic" />
+        <watch expression="data" />
+        <watch expression="fk" />
+        <watch expression="result" />
+        <watch expression="datas" />
+        <watch expression="resultData" />
+        <watch expression="results" />
+        <watch expression="final_result" />
+        <watch expression="df_filtered" />
+        <watch expression="returnData" />
       </configuration>
     </watches-manager>
   </component>

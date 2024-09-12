@@ -1,70 +1,71 @@
-import pandas as pd
 import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
+import json
+import pandas as pd
 
-# 设置允许跨域的请求头
-headers = {
-    'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Content-Type': '*'
-}
-
-# 设置请求重试策略
-retry_strategy = Retry(
-    total=3,  # 重试总次数
-    backoff_factor=1,  # 重试间隔时间的增长因子
-    status_forcelist=[429, 500, 502, 503, 504],  # 需要重试的状态码
-    method_whitelist=["HEAD", "GET", "OPTIONS", "POST"]  # 需要重试的方法
-)
-
-adapter = HTTPAdapter(max_retries=retry_strategy)
-http = requests.Session()
-http.mount("https://", adapter)
-http.mount("http://", adapter)
-
-all_data = []
-
-for i in range(1, 25238):
+def get_yunnan_yuanneizhiji():
+    is_continue = True
+    all_list = []
+    page_nums = 1
+    headers = {
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "Accept-Language": "zh-CN,zh;q=0.9",
+        "Cache-Control": "no-cache",
+        "Connection": "keep-alive",
+        "Content-Type": "application/json",
+        "Origin": "https://ylbz.yn.gov.cn",
+        "Pragma": "no-cache",
+        "Referer": "https://ylbz.yn.gov.cn/",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "cors",
+        "Sec-Fetch-Site": "cross-site",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
+        "sec-ch-ua": "\"Chromium\";v=\"128\", \"Not;A=Brand\";v=\"24\", \"Google Chrome\";v=\"128\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    }
+    url = "https://ggfw.ynylbz.cn/hsa-pss-pw/web/pw/polcent/queryHilist"
     data = {
-        "pageNum": i,
-        "pageSize": 10,
+        "pageNum": 1,
+        "pageSize": 90,
         "listType": 103,
         "usedCache": False,
-        "medListCodg": "",
-        "regName": "",
-        "drugGenname": "",
+        "hilistName": "",
         "hilistCode": ""
     }
-    url = 'https://ggfw.ynylbz.cn/hsa-pss-pw/web/pw/polcent/queryHilist'
-    try:
-        result = http.post(url=url, json=data, headers=headers, timeout=10)
-        result.raise_for_status()
-        result_json = result.json()
-        datas = result_json['data']['list']
-        all_data.extend(datas)
-        print(f'正在爬取第{i}页的数据，共计爬取{len(all_data)}条数据')
-    except requests.exceptions.RequestException as e:
-        print(f'第{i}页请求失败，错误：{e}')
-    except KeyError as e:
-        print(f'解析数据时发生错误：{e}')
-    except Exception as e:
-        print(f'其他错误：{e}')
+    while is_continue:
+        payloads = data.copy()
+        payloads["pageNum"] = page_nums
+        try:
+            response = requests.post(url, headers=headers, json=payloads)
+            datas = response.json()
+            result_datas = datas['data']['list']
+            all_list.extend(result_datas)
+            print(f"返回数据{len(result_datas)}" + f"正在抓取第{page_nums}页数据" + f"共计爬取{len(all_list)}条数据")
+            if len(result_datas) < 90:
+                is_continue = False
+            else:
+                page_nums += 1
+        except Exception as e:
+            print(f"请求失败: {e}")
+            break
+    return all_list
 
-if all_data:
-    df = pd.DataFrame(all_data)
+if __name__ == '__main__':
+    datas = get_yunnan_yuanneizhiji()
+    df = pd.DataFrame(datas)
+
     df_filtered = df[
-        ['medListCodg',
+        ['hilistCode',
+         'hilistUseType',
          'chrgitmLv',
          'hilistName',
-         'regDosform',
-         'drugDosform',
-         'regSpec',
+         'dosform',
          'drugSpec',
          'pacmatl',
-         'minPacCnt',
          'minPacunt',
-         'minPrcunt',
-         'prodentpName',
+         'minPrepunt',
+         'minPacunt',
+         'hospPrepAppyerEmpName',
          'aprvno'
          ]
     ]
@@ -73,9 +74,8 @@ if all_data:
         '制剂类别',
         '医保目录等级',
         '制剂名称',
-        '注册剂型',
         '实际剂型',
-        '注册规格',
+        '实际规格',
         '包装材质',
         '最小包装数量',
         '最小包装单位',
@@ -83,7 +83,8 @@ if all_data:
         '医疗机构名称',
         '批准文号'
     ]
-    df_filtered.to_excel('D:\pythonProject\pythonProject\云南\云南药品_西药中成药.xlsx', index=False)
+    df_filtered.to_excel('D:\pythonProject\pythonProject\云南\云南药品_院内制剂.xlsx', index=False)
+
     print(f'数据已写入表格，共计{len(df_filtered)}条数据')
-else:
-    print('没有获取到任何数据')
+
+    print(len(datas))

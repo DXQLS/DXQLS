@@ -3,7 +3,7 @@ import pandas as pd
 import json
 
 # 读取JSON文件
-file_path = r'D:\pythonProject\result_阜阳市_西药中成药_1723683170.json'
+file_path = r'D:\pythonProject\result_芜湖_西药中成药_1725842312.json'
 
 # 打开文件，逐行读取JSON对象
 data_list = []
@@ -44,7 +44,7 @@ for index, row in data.iterrows():
 expanded_df = pd.DataFrame(expanded_data_list)
 
 # 将DataFrame保存为Excel文件
-output_file = '安徽省_阜阳市_西药中成药_1.xlsx'
+output_file = '安徽省_芜湖_西药中成药.xlsx'
 expanded_df.to_excel(output_file, index=False)
 
 print(f"数据已成功保存到 {output_file}")

@@ -49,6 +49,7 @@ for i in range(1, 4):
             # print(td.xpath('.//text()'))
             # print(td)
             code = td.xpath('./td[1]/text()')[0]
+
             name = td.xpath('./td[2]/text()')[0]
             station = td.xpath('./td[3]/text()')[0]
             series = td.xpath('./td[4]/text()')[0]
